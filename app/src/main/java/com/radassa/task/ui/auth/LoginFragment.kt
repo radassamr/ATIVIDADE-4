@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.radassa.task.R
 import com.radassa.task.databinding.FragmentLoginBinding
 
@@ -24,6 +25,19 @@ class LoginFragment : Fragment() {
         return binding.root
     }
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        initListener()
+    }
+    private fun initListener(){
+        binding.btnRegister.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
+        }
+        binding.btnRecover.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_recoverAccountFragment2)
+        }
+    }
     override fun onDestroy() {
         super.onDestroy()
         _binding = null
