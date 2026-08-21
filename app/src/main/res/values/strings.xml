@@ -1,7 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">Task</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="text_button_register_fragment">Enviar</string>
-    <string name="imagem">Imagem</string>
+
+    <string name="status_task_todo">A Fazer</string>
+    <string name="status_task_doing">Fazendo</string>
+    <string name="status_task_done">Feitas</string>
+
+    <string name="status_a_fazer">A Fazer</string>
+    <string name="status_fazendo">Fazendo</string>
+    <string name="status_feita">Feita</string>
+
+    <string name="label_descricao">Descrição</string>
+    <string name="hint_nova_tarefa">Informe sua nova Tarefa</string>
+    <string name="label_status">Status</string>
+    <string name="btn_salvar">Salvar</string>
+
+
 </resources>

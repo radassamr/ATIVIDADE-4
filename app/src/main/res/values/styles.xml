@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="text_button_register_fragment">Cadastrar</string>
+    <string name="imagem">Logo do Aplicativo</string>
 
-    <style name="CustomTabLayout"></style>
 </resources>

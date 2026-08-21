@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import com.radassa.task.R
 import com.radassa.task.databinding.FragmentHome2Binding
+import com.radassa.task.ui.adapter.ViewPagerAdapter
+import com.google.android.material.tabs.TabLayoutMediator
 
 
 class HomeFragment : Fragment() {

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.HomeFragment2" >
+    tools:context=".ui.HomeFragment2">
 
     <!-- Topo com comportamento de scroll -->
     <com.google.android.material.appbar.AppBarLayout
@@ -30,8 +30,7 @@
                 app:tabMode="scrollable"
                 app:tabPaddingStart="24dp"
                 app:tabPaddingEnd="24dp"
-                android:textSize="14dp"
-                android:textStyle="bold"
+                app:tabTextAppearance="@style/CustomTabLayout"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -39,6 +38,7 @@
                 app:tabIndicatorColor="@color/white"
                 app:tabSelectedTextColor="@color/black"
                 app:tabTextColor="@color/white"/>
+
             <ImageButton
                 android:id="@+id/btnLogout"
                 android:layout_width="wrap_content"
