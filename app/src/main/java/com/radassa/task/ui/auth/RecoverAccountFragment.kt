@@ -1,14 +1,13 @@
 package com.radassa.task.ui.auth
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.radassa.task.R
+import android.widget.Toast
+import androidx.fragment.app.Fragment
 import com.radassa.task.databinding.FragmentRecoverAccountBinding
-import java.util.zip.Inflater
-
+import com.radassa.task.util.initToolbar
 
 class RecoverAccountFragment : Fragment() {
 
@@ -22,7 +21,32 @@ class RecoverAccountFragment : Fragment() {
     ): View {
         _binding = FragmentRecoverAccountBinding.inflate(inflater, container, false)
         return binding.root
+    }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        initToolbar(binding.toolbar)
+        initListener()
+    }
+
+    private fun initListener() {
+        binding.buttonEnviar.setOnClickListener {
+            validateData()
+        }
+    }
+
+    private fun validateData() {
+        val email = binding.editTextEmail.text.toString().trim()
+
+        if (email.isNotBlank()) {
+            Toast.makeText(requireContext(), "Tudo OK!", Toast.LENGTH_SHORT).show()
+        } else {
+            Toast.makeText(
+                requireContext(),
+                "Preencha um email válido!",
+                Toast.LENGTH_SHORT
+            ).show()
+        }
     }
 
     override fun onDestroy() {

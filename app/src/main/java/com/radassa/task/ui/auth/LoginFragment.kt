@@ -25,29 +25,27 @@ class LoginFragment : Fragment() {
         return binding.root
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         initListener()
     }
-    private fun initListener(){
+
+    private fun initListener() {
         binding.buttonLogin.setOnClickListener {
             findNavController().navigate(R.id.action_global_homeFragment)
         }
+
         binding.btnRegister.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
         }
+
         binding.btnRecover.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_recoverAccountFragment2)
         }
     }
+
     override fun onDestroy() {
         super.onDestroy()
         _binding = null
     }
 }
-
-
-
-
-
