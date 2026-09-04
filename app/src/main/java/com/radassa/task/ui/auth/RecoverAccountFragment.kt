@@ -39,7 +39,11 @@ class RecoverAccountFragment : Fragment() {
         val email = binding.editTextEmail.text.toString().trim()
 
         if (email.isNotBlank()) {
-            Toast.makeText(requireContext(), "Tudo OK!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(
+                requireContext(),
+                "Tudo OK!",
+                Toast.LENGTH_SHORT
+            ).show()
         } else {
             Toast.makeText(
                 requireContext(),

@@ -19,5 +19,10 @@
     <string name="label_status">Status</string>
     <string name="btn_salvar">Salvar</string>
 
+    <string name="text_title_warning">Atenção</string>
+    <string name="text_button_warning">Entendi</string>
+
+    <string name="password_empty">Preencha sua senha</string>
+    <string name="email_empty">Preencha seu email</string>
 
 </resources>

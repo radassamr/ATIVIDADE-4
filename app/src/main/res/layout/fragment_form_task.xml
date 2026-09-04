@@ -91,7 +91,8 @@
                     android:layout_height="wrap_content"
                     android:buttonTint="@color/white"
                     android:layout_weight="1"
-                    android:text="@string/status_fazendo"
+                    android:text="A fazer"
+                    android:checked="true"
                     android:textColor="@color/white" />
 
                 <RadioButton
@@ -100,8 +101,8 @@
                     android:layout_height="wrap_content"
                     android:buttonTint="@color/white"
                     android:layout_weight="1"
-                    android:text="@string/status_feita"
-                    android:textColor="@color/white" />
+                    android:text="Fazendo"
+                     />
 
             </RadioGroup>
 
